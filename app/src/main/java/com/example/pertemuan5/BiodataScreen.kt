@@ -271,5 +271,67 @@ fun BiodataScreen(
                     )
                 }
 
-                
+                Box(modifier = Modifier.weight(1f)) {
+                    OutlinedTextField(
+                        value = pengalaman,
+                        onValueChange = {},
+                        readOnly = true,
+                        singleLine = true,
+                        placeholder = {
+                            Text(stringResource(R.string.experience))
+                        },
+                        trailingIcon = {
+                            Text("▼", color = teks)
+                        },
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(
+                            dimensionResource(R.dimen.input_corner)
+                        ),
+                        colors = OutlinedTextFieldDefaults.colors(
+                            focusedBorderColor = ungu,
+                            unfocusedBorderColor = garis
+                        )
+                    )
+
+                    Box(
+                        modifier = Modifier
+                            .matchParentSize()
+                            .clickable { bukaDropdown = true }
+                    )
+
+                    DropdownMenu(
+                        expanded = bukaDropdown,
+                        onDismissRequest = {
+                            bukaDropdown = false
+                        }
+                    ) {
+                        pilihanPengalaman.forEach { pilihan ->
+                            DropdownMenuItem(
+                                text = { Text(pilihan) },
+                                onClick = {
+                                    pengalaman = pilihan
+                                    bukaDropdown = false
+                                }
+                            )
+                        }
+                    }
+                }
+            }
+
+            Spacer(
+                Modifier.height(
+                    dimensionResource(R.dimen.section_spacing)
+                )
+            )
+
+            Text(
+                text = stringResource(R.string.select_skill),
+                modifier = Modifier.fillMaxWidth(),
+                color = teks,
+                fontSize = dimensionResource(
+                    R.dimen.label_text_size
+                ).value.sp,
+                fontWeight = FontWeight.Bold
+            )
+
 }
