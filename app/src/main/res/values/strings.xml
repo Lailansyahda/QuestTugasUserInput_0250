@@ -22,5 +22,15 @@
     <string name="confirm">Pilih</string>
     <string name="cancel">Batal</string>
 
+    <string name="experience_beginner">Beginner</string>
+    <string name="experience_intermediate">Intermediate</string>
+    <string name="experience_advanced">Advanced</string>
+
+    <string-array name="experience_options">
+        <item>@string/experience_beginner</item>
+        <item>@string/experience_intermediate</item>
+        <item>@string/experience_advanced</item>
+    </string-array>
+
 
 </resources>
