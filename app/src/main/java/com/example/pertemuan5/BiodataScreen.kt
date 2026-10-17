@@ -108,5 +108,15 @@ fun BiodataScreen(
         pengalaman
     )
 
- 
+    val daftarSkill = listOfNotNull(
+        if (skillAndroid) labelAndroid else null,
+        if (skillUiux) labelUiux else null,
+        if (skillWeb) labelWeb else null
+    ).joinToString()
+
+    val hasilSkill = stringResource(
+        R.string.result_skills,
+        daftarSkill
+    )
+
 }
