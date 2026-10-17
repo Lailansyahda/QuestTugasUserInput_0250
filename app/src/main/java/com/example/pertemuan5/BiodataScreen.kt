@@ -47,5 +47,10 @@ fun BiodataScreen(
     var tanggalLahir by remember { mutableStateOf<Long?>(null) }
     var pengalaman by remember { mutableStateOf("") }
 
-   
+    var pilihTanggal by remember { mutableStateOf(false) }
+    var bukaDropdown by remember { mutableStateOf(false) }
+
+    var skillAndroid by remember { mutableStateOf(false) }
+    var skillUiux by remember { mutableStateOf(false) }
+    var skillWeb by remember { mutableStateOf(false) }
 }
