@@ -90,5 +90,23 @@ fun BiodataScreen(
     val labelUiux = stringResource(R.string.skill_uiux)
     val labelWeb = stringResource(R.string.skill_web)
 
-    
+    val hasilNama = stringResource(
+        R.string.result_name,
+        namaDepan,
+        namaBelakang
+    )
+    val hasilEmail = stringResource(
+        R.string.result_email,
+        email
+    )
+    val hasilTanggal = stringResource(
+        R.string.result_birth_date,
+        tanggalTampil
+    )
+    val hasilPengalaman = stringResource(
+        R.string.result_experience,
+        pengalaman
+    )
+
+ 
 }
