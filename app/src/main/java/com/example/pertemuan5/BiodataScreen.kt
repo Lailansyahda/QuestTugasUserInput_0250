@@ -214,5 +214,26 @@ fun BiodataScreen(
                 )
             }
 
+            Spacer(
+                Modifier.height(
+                    dimensionResource(R.dimen.input_spacing)
+                )
+            )
+
+            // Email memenuhi lebar kartu.
+            InputBiodata(
+                value = email,
+                onValueChange = { email = it },
+                label = stringResource(R.string.email),
+                keyboard = KeyboardType.Email,
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            Spacer(
+                Modifier.height(
+                    dimensionResource(R.dimen.input_spacing)
+                )
+            )
+
            
 }
