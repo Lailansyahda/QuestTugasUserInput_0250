@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="biodata_purple">#713DCA</color>
+    <color name="biodata_background">#F8F6FB</color>
+    <color name="biodata_input_border">#9999A5</color>
+    <color name="biodata_text">#454550</color>
+    <color name="biodata_hint">#898991</color>
+    <color name="biodata_disabled">#E1E1E1</color>
+    <color name="biodata_disabled_text">#FFFFFF</color>
+    <color name="biodata_divider">#EAE7ED</color>
 </resources>
